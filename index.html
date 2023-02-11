@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vim Tutorial</title>
+    <link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="bootstrap-5.1.3-dist/css/bootstrap.min.css">
+</head>
+
+<body class="bg-dark">
+    <div class="container">
+        <h1 class="text-light text-center">Vim Tutorials</h1>
+
+<!--Lesson 1-->
+        <h2 class="text-light text-center">Lesson 1</h2>
+        <table class="table table-danger table-bordered border-dark table-hover">
+            <thead>
+                <tr>
+                    <th class="text-light" style="background-color: #DC3545">Key</th>
+                    <th class="text-light" style="background-color: #DC3545">Function</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; h</td>
+                    <td>Move Left.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; l</td>
+                    <td>Move Right.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; j</td>
+                    <td>Move Down.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; k</td>
+                    <td>Move Up.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; :q</td>
+                    <td>Close file.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; :q!</td>
+                    <td>Close file without saving.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; :w</td>
+                    <td>Write.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; :wq</td>
+                    <td>Write and quit.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; x</td>
+                    <td>Delete Character at the Cursor.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; i</td>
+                    <td>Insert at cursor.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; I</td>
+                    <td>Insert at beginning.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; a</td>
+                    <td>Append at cursor.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; A</td>
+                    <td>Append at end of line.</td>
+                </tr>
+            </tbody> 
+        </table>
+
+<!--Lesson 2-->
+        <h2 class="text-light text-center">Lesson 2</h2>
+        <table class="table table-danger table-bordered border-dark table-hover">
+            <thead>
+                <tr>
+                    <th class="text-light" style="background-color: #DC3545">Key</th>
+                    <th class="text-light" style="background-color: #DC3545">Function</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; dw</td>
+                    <td>Delete word.</td>
+                </tr>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; $</td>
+                    <td>Go to the end of the text.</td>
+                </tr>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; w</td>
+                    <td>Next Word.</td>
+                </tr>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; b</td>
+                    <td>Previous Word.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; e</td>
+                    <td>Go the end of the word.</td>
+                </tr>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; 0</td>
+                    <td>Go to beginning of the line at the very start.</td>
+                </tr>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; ^</td>
+                    <td>Go to beginning of the line at the starting text.</td>
+                </tr>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; d$</td>
+                    <td>Delete to the end of line.</td>
+                </tr>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; 2w</td>
+                    <td>Go two words forward.</td>
+                </tr>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; 3e</td>
+                    <td>Go to the end of 3rd word.</td>
+                </tr>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; d2w</td>
+                    <td>Delete two words.</td>
+                </tr>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; dd</td>
+                    <td>Delete entire line.</td>
+                </tr>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; 2dd</td>
+                    <td>Delete two entire line.</td>
+                </tr>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; u</td>
+                    <td>Undo last change.</td>
+                </tr>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; U</td>
+                    <td>Undo changes on entire line.</td>
+                </tr>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; Cntrl + r</td>
+                    <td>Redo changes.</td>
+                </tr>
+            </tbody>
+        </table>
+
+<!--Lesson 3-->
+        <h2 class="text-light text-center">Lesson 3</h2>
+        <table class="table table-danger table-hover table-bordered border-dark">
+            <thead>
+                <tr>
+                    <th class="text-light" style="background-color: #DC3545">Key</th>
+                    <th class="text-light" style="background-color: #DC3545">Function</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input  class="form-check-input" type="checkbox" name="" id="">&nbsp; &nbsp; p</td>
+                    <td>Paste after Cursor.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; P</td>
+                    <td>Paste before Cursor.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; cw</td>
+                    <td>Change word.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; r</td>
+                    <td>Replace character under the cursor.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; cw</td>
+                    <td>Change Word.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; c$</td>
+                    <td>Change to the end of line.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; c2w</td>
+                    <td>Change 2 words.</td>
+                </tr>
+            </tbody>
+        </table>
+        <table>
+
+<!--Lesson 4-->
+        <h2 class="text-light text-center">Lesson 4</h2>
+        <table class="table table-danger table-hover table-bordered border-dark">
+            <thead>
+                <tr>
+                    <th class="text-light" style="background-color: #DC3545">Key</th>
+                    <th class="text-light" style="background-color: #DC3545">Function</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; :50</td>
+                    <td>Go to line no 50.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; G</td>
+                    <td>Go to the last line.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; gg</td>
+                    <td>Go to the first line.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; /waldo</td>
+                    <td>Search for waldo.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; n</td>
+                    <td>Go to next search result.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; N</td>
+                    <td>Go to previous search result.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; ?carman</td>
+                    <td>Search carman in reversed.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; ctrl + o</td>
+                    <td>Jump to previous location.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; ctrl + i</td>
+                    <td>Jump to next location.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; %</td>
+                    <td>Go to next matching pranthesis or brackets.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; :%s/bad/good</td>
+                    <td>Replace bad with good in current line.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; :%s/hi/bye/g</td>
+                    <td>Replace hi with bye in whole document globally.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; :%s/x/y/gc</td>
+                    <td>Replace x with y and ask for confirmations.</td>
+                </tr>
+            </table>
+
+<!--Lesson 5-->
+        <h2 class="text-light text-center">Lesson 5</h2>
+        <table class="table table-danger table-hover table-bordered border-dark">
+            <thead>
+                <th class="text-light" style="background-color: #DC3545">Key</th>
+                <th class="text-light" style="background-color: #DC3545">Function</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; v</td>
+                    <td>Open visual mode.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; V</td>
+                    <td>Open visual select lines.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; vw</td>
+                    <td>Visual select word.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; vwx or vwd</td>
+                    <td>Visual select and then delete the word.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; :w readme.txt</td>
+                    <td>To write the current data as readme.txt.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; :!ls</td>
+                    <td>Run ls shell command.</td>
+                </tr>
+            </tbody>
+        </table>
+<!--Lesson 6-->
+        <h2 class="text-light text-center">Lesson 6</h2>
+        <table class="table table-danger table-hover table-bordered border-dark">
+            <thead>
+                <th class="text-light" style="background-color: #DC3545">Key</th>
+                <th class="text-light" style="background-color: #DC3545">Function</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; o</td>
+                    <td>Open new line below.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; O</td>
+                    <td>Open new line above.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; e</td>
+                    <td>Go to the end of the word.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; 2e</td>
+                    <td>Go to the end of two words.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; R</td>
+                    <td>Enter replace mode.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; yw</td>
+                    <td>Yank Word.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; vwy</td>
+                    <td>Visual select word then yank.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; y$</td>
+                    <td>Yank to the end of the Current Line.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; :set ignorecase</td>
+                    <td>Change the search settings to ignore case.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; :set noignorecase</td>
+                    <td>Change the search settings to use case.</td>
+                </tr>
+            </tbody>
+        </table>
+
+<!-- Important Functions -->
+        <h2 class="text-light text-center">Recording Macro Function</h2>
+        <table class="table table-danger table-hover table-bordered border-dark">
+            <thead>
+                <th class="text-light" style="background-color: #DC3545">Key</th>
+                <th class="text-light" style="background-color: #DC3545">Function </th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; q</td>
+                    <td>To start recording macro.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; Any key between (a - z)</td>
+                    <td>This will assign the key on which the macro is recorded.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; q</td>
+                    <td>Press q again to stop recording macro.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; @ + the key between (a-z) the macro was recorded on</td>
+                    <td>This will run the macro.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; @ + @</td>
+                    <td>After running the macro you can use this to repeat the macro.</td>
+                </tr>
+            </tbody>
+        </table>
+
+<!--Some important settings and shortcuts-->
+        <h2 class="text-light text-center">Some important settings and shortcuts.</h2>
+        <table class="table table-danger table-hover table-bordered border-dark">
+            <thead>
+                <th class="text-light" style="background-color: #DC3545">Key</th>
+                <th class="text-light" style="background-color: #DC3545">Function</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; :set number</td>
+                    <td>Shows the line number</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; :set relativenumber</td>
+                    <td>Shows the number of lines above and below makes it easy and quick to navigate.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; yy</td>
+                    <td>To copy whole line.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; cc</td>
+                    <td>To change whole line.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; * and #</td>
+                    <td>To find other instances of the same word or character.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; zz</td>
+                    <td>To center the view page.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; .</td>
+                    <td>To repeat the recent action.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; t</td>
+                    <td>To transfer cursor before the stated character. For example t* will transfer the cursor to a place just before * in the code.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; f</td>
+                    <td>Will find and transfer the cursor to the stated character. For exapmle f* will put the cursor on * looking forward in the code.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; T</td>
+                    <td>Will perform similar function as t but in reversed order.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; F</td>
+                    <td>Will perform similar function as f but in reversed order.</td>
+                </tr>
+            </tbody>
+        </table>
+
+<!--Understanding Registry for copy and Pasting stuffs-->
+        <h2 class="text-light text-center">Understanding Registry for copy and pasting stuffs.</h2>
+        <table class="table table-danger table-hover table-bordered border-dark">
+            <thead>
+                <th class="text-light" style="background-color: #DC3545">Key</th>
+                <th class="text-light" style="background-color: #DC3545">Function</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; :register</td>
+                    <td>Shows the register where the history of yanking and cutting is stored.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; "(a-z)y</td>
+                    <td>This will help to create a custom register to the assigned key between or the selected text can be yanked to any key from a-z.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; "(a-z)p</td>
+                    <td>This will paste custom register created.</td>
+                </tr>
+            </tbody>
+        </table>
+
+<!--Use of i or in-->
+        <h2 class="text-light text-center">Use of i or in</h2>
+        <table class="table table-danger table-hover table-bordered border-dark">
+            <thead>
+                <th class="text-light" style="background-color: #DC3545">Key</th>
+                <th class="text-light" style="background-color: #DC3545">Function</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; ci( or di( or ci{ or di[</td>
+                    <td>ci( will change the text within (). di( will delete the text within (). This will be the same with any of the stated brackets.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; yiw</td>
+                    <td>This will copy the word between which the cursor is.</td>
+                </tr>
+                <tr>
+                    <td><input class="form-check-input"  type="checkbox" name="" id="">&nbsp; &nbsp; diw</td>
+                    <td>This will delete the word between which the cursor is.</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
