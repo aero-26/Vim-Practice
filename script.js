@@ -175,3 +175,78 @@ for (let u = 64; u <= 68; u++) {
     checkForMF();
   });
 }
+
+// Click functions for Some important settings and shortcuts.
+function checkForImpSS() {
+  for (let v = 69; v <= 79; v++) {
+    if (check[v].checked) {
+      tr[v + 8].classList.add("strike-through");
+    } else {
+      tr[v + 8].classList.remove("strike-through");
+    }
+  }
+}
+
+for (let w = 77; w <= 87; w++) {
+  tr[w].addEventListener("click", function strikeAndCheck() {
+    check[w - 8].click();
+    checkForImpSS();
+  });
+}
+
+for (let x = 69; x <= 79; x++) {
+  check[x].addEventListener("click", () => {
+    check[x].click();
+    checkForImpSS();
+  });
+}
+
+// Click functions for Understanding Registry for copy and pasting stuffs.
+function checkForRegCp() {
+  for (let y = 80; y <= 82; y++) {
+    if (check[y].checked) {
+      tr[y + 9].classList.add("strike-through");
+    } else {
+      tr[y + 9].classList.remove("strike-through");
+    }
+  }
+}
+
+for (let z = 89; z <= 91; z++) {
+  tr[z].addEventListener("click", function strikeAndCheck() {
+    check[z - 9].click();
+    checkForRegCp();
+  });
+}
+
+for (let ab = 80; ab <= 82; ab++) {
+  check[ab].addEventListener("click", () => {
+    check[ab].click();
+    checkForRegCp();
+  });
+}
+
+// Click functions for Use of i or in.
+function checkFori() {
+  for (let ac = 83; ac <= 85; ac++) {
+    if (check[ac].checked) {
+      tr[ac + 10].classList.add("strike-through");
+    } else {
+      tr[ac + 10].classList.remove("strike-through");
+    }
+  }
+}
+
+for (let ad = 93; ad <= 95; ad++) {
+  tr[ad].addEventListener("click", function strikeAndCheck() {
+    check[ad - 10].click();
+    checkFori();
+  });
+}
+
+for (let ae = 83; ae <= 85; ae++) {
+  check[ae].addEventListener("click", () => {
+    check[ae].click();
+    checkFori();
+  });
+}
