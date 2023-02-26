@@ -65,13 +65,38 @@ function checkForLs3() {
 for (let h = 32; h <= 37; h++) {
   tr[h].addEventListener("click", function strikeAndCheck() {
     check[h - 3].click();
-    checkForLs2();
+    checkForLs3();
   });
 }
 
-for (let f = 29; f <= 34; f++) {
-  check[f].addEventListener("click", () => {
-    check[f].click();
+for (let i = 29; i <= 34; i++) {
+  check[i].addEventListener("click", () => {
+    check[i].click();
     checkForLs3();
+  });
+}
+
+// Click functions for Lessons 4.
+function checkForLs4() {
+  for (let j = 35; j <= 47; j++) {
+    if (check[j].checked) {
+      tr[j + 4].classList.add("strike-through");
+    } else {
+      tr[j + 4].classList.remove("strike-through");
+    }
+  }
+}
+
+for (let k = 39; k <= 51; k++) {
+  tr[k].addEventListener("click", function strikeAndCheck() {
+    check[k - 4].click();
+    checkForLs4();
+  });
+}
+
+for (let l = 35; l <= 47; l++) {
+  check[l].addEventListener("click", () => {
+    check[l].click();
+    checkForLs4();
   });
 }
