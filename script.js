@@ -44,9 +44,34 @@ for (let e = 15; e <= 30; e++) {
   });
 }
 
-for (let f = 0; f <= 28; f++) {
+for (let f = 13; f <= 28; f++) {
   check[f].addEventListener("click", () => {
     check[f].click();
     checkForLs2();
+  });
+}
+
+// Click functions for Lessons 3.
+function checkForLs3() {
+  for (let g = 29; g <= 34; g++) {
+    if (check[g].checked) {
+      tr[g + 3].classList.add("strike-through");
+    } else {
+      tr[g + 3].classList.remove("strike-through");
+    }
+  }
+}
+
+for (let h = 32; h <= 37; h++) {
+  tr[h].addEventListener("click", function strikeAndCheck() {
+    check[h - 3].click();
+    checkForLs2();
+  });
+}
+
+for (let f = 29; f <= 34; f++) {
+  check[f].addEventListener("click", () => {
+    check[f].click();
+    checkForLs3();
   });
 }
