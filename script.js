@@ -125,3 +125,53 @@ for (let o = 48; o <= 53; o++) {
     checkForLs5();
   });
 }
+
+// Click functions for Lessons 6.
+function checkForLs6() {
+  for (let p = 54; p <= 63; p++) {
+    if (check[p].checked) {
+      tr[p + 6].classList.add("strike-through");
+    } else {
+      tr[p + 6].classList.remove("strike-through");
+    }
+  }
+}
+
+for (let q = 60; q <= 69; q++) {
+  tr[q].addEventListener("click", function strikeAndCheck() {
+    check[q - 6].click();
+    checkForLs6();
+  });
+}
+
+for (let r = 54; r <= 63; r++) {
+  check[r].addEventListener("click", () => {
+    check[r].click();
+    checkForLs6();
+  });
+}
+
+// Click functions for Macro Functions.
+function checkForMF() {
+  for (let s = 64; s <= 68; s++) {
+    if (check[s].checked) {
+      tr[s + 7].classList.add("strike-through");
+    } else {
+      tr[s + 7].classList.remove("strike-through");
+    }
+  }
+}
+
+for (let t = 71; t <= 75; t++) {
+  tr[t].addEventListener("click", function strikeAndCheck() {
+    check[t - 7].click();
+    checkForMF();
+  });
+}
+
+for (let u = 64; u <= 68; u++) {
+  check[u].addEventListener("click", () => {
+    check[u].click();
+    checkForMF();
+  });
+}
