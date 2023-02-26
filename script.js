@@ -100,3 +100,28 @@ for (let l = 35; l <= 47; l++) {
     checkForLs4();
   });
 }
+
+// Click functions for Lessons 5.
+function checkForLs5() {
+  for (let m = 48; m <= 53; m++) {
+    if (check[m].checked) {
+      tr[m + 5].classList.add("strike-through");
+    } else {
+      tr[m + 5].classList.remove("strike-through");
+    }
+  }
+}
+
+for (let n = 53; n <= 58; n++) {
+  tr[n].addEventListener("click", function strikeAndCheck() {
+    check[n - 5].click();
+    checkForLs5();
+  });
+}
+
+for (let o = 48; o <= 53; o++) {
+  check[o].addEventListener("click", () => {
+    check[o].click();
+    checkForLs5();
+  });
+}
