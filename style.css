@@ -1,0 +1,5 @@
+/* To add the strike through in text after marking it done. */
+.strike-through {
+  color: #565656;
+  text-decoration-line: line-through;
+}
